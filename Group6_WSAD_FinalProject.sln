@@ -1,11 +1,10 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group6_WSAD_FinalProject", "Group6_WSAD_FinalProject\Group6_WSAD_FinalProject.csproj", "{1D59F730-EEB9-445A-B6B5-EBC4CD78B5C1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{913976C0-4AA6-46B6-937A-E5BC4D04DBBF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1925102-175F-4C81-8158-29A92FFF7A4D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
