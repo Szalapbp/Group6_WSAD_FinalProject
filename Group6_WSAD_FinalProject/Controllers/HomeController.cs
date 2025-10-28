@@ -17,8 +17,37 @@ namespace Group6_WSAD_FinalProject.Controllers
         {
             return View();
         }
+        public IActionResult AboutHome()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult Bella()
+        {
+            return View();
+        }
+
+        public IActionResult Blake()
+        {
+            return View();
+        }
+
+        public IActionResult Brian()
+        {
+            return View();
+        }
+
+        public IActionResult HobbyHome()
+        {
+            return View();
+        }
+
+        public IActionResult Hobby()
+        {
+            return View();
+        }
+
+        public IActionResult Dataset()
         {
             return View();
         }
