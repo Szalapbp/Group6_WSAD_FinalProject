@@ -1,0 +1,8 @@
+# Build artifacts
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+*.db
