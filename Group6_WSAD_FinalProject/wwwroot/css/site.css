@@ -20,3 +20,26 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    align-items: start;
+}
+
+.about-text {
+    line-height: 1.6;
+}
+#headshot {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.about-image {
+    display: flex;
+    justify-content: flex-end;
+}
+

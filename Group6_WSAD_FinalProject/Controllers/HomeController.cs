@@ -24,12 +24,12 @@ namespace Group6_WSAD_FinalProject.Controllers
 
         public IActionResult Bella()
         {
-            return View();
+            return View("~/Views/Bella/AboutBella.cshtml");
         }
 
         public IActionResult Blake()
         {
-            return View();
+            return View("~/Views/Blake/AboutBlake.cshtml");
         }
 
         public IActionResult Brian()

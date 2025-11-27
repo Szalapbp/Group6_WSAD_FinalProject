@@ -1,0 +1,44 @@
+﻿@model List<Group6_WSAD_FinalProject.Models.Hobby>
+
+@{
+    ViewData["Title"] = "Bella's Favorite Hobbies";
+}
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-5">Bella's Favorite Hobbies</h1>
+
+    @if (!Model.Any())
+    {
+        <p>No hobbies found for Bella.</p>
+    }
+    else
+    {
+        foreach (var hobby in Model)
+        {
+            <div class="hobby-item d-flex flex-wrap align-items-center mb-5">
+
+                <!-- Need to add in pictures -->
+                <!-- <div class="hobby-image me-4 mb-3">
+                    <img src="~/Images/Hobbies/@(hobby.Name.Replace(" ", "")) .jpg"alt="@hobby.Name Image" />
+                </div> -->
+
+                <!-- Hobby Text -->
+                <div class="hobby-text">
+                    <h2 class="mb-2">@hobby.Name</h2>
+
+                    @if (!string.IsNullOrEmpty(hobby.Category))
+                    {
+                        <p><strong>Category:</strong> @hobby.Category</p>
+                    }
+
+                    @if (!string.IsNullOrEmpty(hobby.Reason))
+                    {
+                        <p><strong>Why Bella Likes It and Background:</strong> @hobby.Reason</p>
+                    }
+                </div>
+
+            </div>
+        }
+    }
+</div>
