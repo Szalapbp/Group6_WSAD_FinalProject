@@ -6,7 +6,7 @@ namespace Group6_WSAD_FinalProject.Controllers
     {
         public IActionResult Explore()
         {
-            return View();
+            return View("~/Views/Hobbies/Explore.cshtml");
         }
 
        

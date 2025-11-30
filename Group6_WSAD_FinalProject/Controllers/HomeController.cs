@@ -22,21 +22,6 @@ namespace Group6_WSAD_FinalProject.Controllers
             return View();
         }
 
-        public IActionResult AboutBella()
-        {
-            return View("~/Views/Bella/AboutBella.cshtml");
-        }
-
-        public IActionResult AboutBlake()
-        {
-            return View("~/Views/Blake/AboutBlake.cshtml");
-        }
-
-        public IActionResult AboutBrian()
-        {
-            return View();
-        }
-
         public IActionResult Explore()
         {
             return View("~/Views/Hobbies/Explore.cshtml");

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Group6_WSAD_FinalProject</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -30,9 +30,9 @@
                                 About
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="AboutBlake">About Blake</a></li>
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="AboutBrian">About Brian</a></li>
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="AboutBella">About Bella</a></li>
+                                <li><a class="dropdown-item" asp-controller="Blake" asp-action="AboutBlake">About Blake</a></li>
+                                <li><a class="dropdown-item" asp-controller="Brian" asp-action="AboutBrian">About Brian</a></li>
+                                <li><a class="dropdown-item" asp-controller="Bella" asp-action="AboutBella">About Bella</a></li>
                             </ul>
                         </li>
 
@@ -43,8 +43,8 @@
                                 Hobbies
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="hobbyDropdown">
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="BlakeHobby">Blakes’s Hobby</a></li>
-                                <li><a class="dropdown-item" asp-controller="Home" asp-action="BrianHobby">Brian’s Hobby</a></li>
+                                <li><a class="dropdown-item" asp-controller="Blake" asp-action="BlakeHobby">Blakes’s Hobby</a></li>
+                                <li><a class="dropdown-item" asp-controller="Brian" asp-action="BrianHobby">Brian’s Hobby</a></li>
                                 <li><a class="dropdown-item" asp-controller="Bella" asp-action="BellaHobbies">Bella’s Hobby</a></li>
                             </ul>
                         </li>

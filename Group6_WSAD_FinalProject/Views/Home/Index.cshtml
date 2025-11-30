@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div class="p-4 rounded shadow-sm panel-border">
 <div class="title-banner"">
     <h1>Welcome To Group 6's Final Project</h1>
     <p>Created By: Blake Szalapski, Brian Faught, and Bella Orr</p>
@@ -9,7 +10,7 @@
 
 <div class="container mb-5">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 pt-4">
             <p>
                 This website was created as the Final Project for Group 6 in Web Server Application Development.
                 It uses ASP.NET Core MVC to display who we are and our favorite hobbies while showcasing what we’ve learned
@@ -21,15 +22,15 @@
 
 <div class="container text-center mt-4">
     <div class="d-flex flex-column align-items-center">
-        <div class="card shadow-sm border-0 mb-4" style="width: 22rem;">
+        <div class="card shadow-lg border-0 mb-4" style="width: 22rem;">
             <div class="card-body">
                 <h5 class="card-title">Explore Our Hobbies</h5>
                 <p class="card-text">Check out some of our favorite hobbies.</p>
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Explore">See Hobbies</a>
+                <a class="btn btn-primary" asp-controller="Hobbies" asp-action="Explore">See Hobbies</a>
             </div>
         </div>
 
-        <div class="card shadow-sm border-0 mb-4" style="width: 22rem;">
+        <div class="card shadow-lg border-0 mb-4" style="width: 22rem;">
             <div class="card-body">
                 <h5 class="card-title">Meet the Team</h5>
                 <p class="card-text">Get to know more about Blake, Brian, and Bella.</p>
@@ -37,7 +38,7 @@
             </div>
         </div>
 
-        <div class="card shadow-sm border-0 mb-4" style="width: 22rem;">
+        <div class="card shadow-lg border-0 mb-4" style="width: 22rem;">
             <div class="card-body">
                 <h5 class="card-title">View Our Dataset</h5>
                 <p class="card-text">Here is our dataset that relates to our hobbies.</p>
@@ -45,4 +46,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>

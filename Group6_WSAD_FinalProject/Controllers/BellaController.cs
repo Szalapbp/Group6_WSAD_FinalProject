@@ -15,7 +15,7 @@ namespace Group6_WSAD_FinalProject.Controllers
 
         public IActionResult AboutBella()
         {
-            return View();
+            return View("~/Views/Bella/AboutBella.cshtml");
         }
         public IActionResult BellaHobbies()
         {
