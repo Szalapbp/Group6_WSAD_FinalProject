@@ -6,7 +6,7 @@
 
 <div class="container mt-5">
 
-    <h1 class="text-center mb-5">Bella's Favorite Hobbies</h1>
+    <h1 class="title-banner">Bella's Favorite Hobbies</h1>
 
     @if (!Model.Any())
     {
@@ -16,12 +16,9 @@
     {
         foreach (var hobby in Model)
         {
-            <div class="hobby-item d-flex flex-wrap align-items-center mb-5">
+            <div class="hobby-item mb-5">
 
-                <!-- Need to add in pictures -->
-                <!-- <div class="hobby-image me-4 mb-3">
-                    <img src="~/Images/Hobbies/@(hobby.Name.Replace(" ", "")) .jpg"alt="@hobby.Name Image" />
-                </div> -->
+ 
 
                 <!-- Hobby Text -->
                 <div class="hobby-text">
@@ -36,6 +33,19 @@
                     {
                         <p><strong>Why Bella Likes It and Background:</strong> @hobby.Reason</p>
                     }
+                </div>
+
+
+                <div class="row text-center">
+                    <div class="col-4 mb-3">
+                        <img src="~/images/Breakaway.jpg" alt="Breakaway Concert"  style="height: 450px; object-fit: cover;" />
+                    </div>
+                    <div class="col-4 mb-3">
+                        <img src="~/images/TheWeekend.jpg" alt="The Weekend Concert"  style="height: 450px; object-fit: cover;" />
+                    </div>
+                    <div class="col-4 mb-3">
+                        <img src="~/images/Wallows.jpg" alt="Wallows Concert"  style="height: 450px; object-fit: cover;" />
+                    </div>
                 </div>
 
             </div>

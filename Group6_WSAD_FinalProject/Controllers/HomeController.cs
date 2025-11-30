@@ -22,30 +22,26 @@ namespace Group6_WSAD_FinalProject.Controllers
             return View();
         }
 
-        public IActionResult Bella()
+        public IActionResult AboutBella()
         {
             return View("~/Views/Bella/AboutBella.cshtml");
         }
 
-        public IActionResult Blake()
+        public IActionResult AboutBlake()
         {
             return View("~/Views/Blake/AboutBlake.cshtml");
         }
 
-        public IActionResult Brian()
+        public IActionResult AboutBrian()
         {
             return View();
         }
 
-        public IActionResult HobbyHome()
+        public IActionResult Explore()
         {
-            return View();
+            return View("~/Views/Hobbies/Explore.cshtml");
         }
 
-        public IActionResult Hobby()
-        {
-            return View();
-        }
 
         public IActionResult Dataset()
         {
