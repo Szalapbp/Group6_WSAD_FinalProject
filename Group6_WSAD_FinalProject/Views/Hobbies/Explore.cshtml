@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Explore Our Hobbies";
+}
+
+<div class="container mt-5">
+    <div class="p-4 rounded shadow-sm panel-border">
+
+        <h1 class="title-banner text-center mb-4">Explore Our Hobbies</h1>
+        <p class="text-center text-muted mb-4">
+            Get to know each member of our group and see what we like to do outside of school and work!
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 pb-4">
+
+            <!-- Blake -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Blake's Hobby</h4>
+                        <p class="card-text">Add short description here</p>
+                        <a asp-controller="Blake" asp-action="BlakeHobbies" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brian -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Brian's Hobby</h4>
+                        <p class="card-text">Add short description here</p>
+                        <a asp-controller="Brian" asp-action="BrianHobbies" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bella -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Bella's Hobby</h4>
+                        <p class="card-text">Bella enjoys music so she goes to many concerts.</p>
+                        <a asp-controller="Bella" asp-action="BellaHobbies" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
