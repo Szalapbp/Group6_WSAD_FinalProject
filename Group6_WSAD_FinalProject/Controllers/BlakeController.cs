@@ -1,14 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Group6_WSAD_FinalProject.Models;
-using System.Threading.Tasks;
-using System.Linq;
-using Group6_WSAD_FinalProject.Models.Blake;
+using Microsoft.EntityFrameworkCore;
 
 namespace Group6_WSAD_FinalProject.Controllers
 {
     public class BlakeController : Controller
     {
-    
+        private readonly AppDbContext _context;
+
+        public BlakeController(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public IActionResult AboutBlake()
         {
@@ -16,7 +19,10 @@ namespace Group6_WSAD_FinalProject.Controllers
         }
         public IActionResult BlakeHobbies()
         {
-            return View();
+            var hobbies = _context.Hobbies
+            .Where(h => h.OwnerId == 2)
+            .ToList();
+            return View(hobbies);
         }
     }
 }

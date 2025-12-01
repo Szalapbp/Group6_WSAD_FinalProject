@@ -1,5 +1,57 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<Group6_WSAD_FinalProject.Models.Hobby>
+
 @{
+    ViewData["Title"] = "Blake's Favorite Hobbies";
 }
+<div class="container mt-5">
+    <div class="p-4 rounded shadow-sm panel-border">
+
+        <h1 class="title-banner">Blake's Favorite Hobbies</h1>
+
+        @if (!Model.Any())
+        {
+            <p>No hobbies found for Blake.</p>
+        }
+        else
+        {
+            foreach (var hobby in Model)
+            {
+                <div class="hobby-item mb-5">
+
+
+
+                    <!-- Hobby Text -->
+                    <div class="hobby-text">
+                        <h2 class="mb-2">@hobby.Name</h2>
+
+                        @if (!string.IsNullOrEmpty(hobby.Category))
+                        {
+                            <p><strong>Category:</strong> @hobby.Category</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(hobby.Reason))
+                        {
+                            <p><strong>Why Blake Likes It and Background:</strong> @hobby.Reason</p>
+                        }
+                    </div>
+
+
+                    <!--Images-->
+                    <div class="row text-center">
+                        <div class="col-4 mb-3">
+                            <img src="~/images/ASE-Cover.jpg" alt="Ark: Survival Evolved" style="height: 450px; object-fit: cover;" />
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img src="~/images/RocketLeague-Cover.jpg" alt="RocketLeague" style="height: 450px; object-fit: cover;" />
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img src="~/images/EliteDangerous-Cover.jpg" alt="EliteDangerous" style="height: 450px; object-fit: cover;" />
+                        </div>
+                    </div>
+
+                </div>
+            }
+        }
+
+    </div>
+</div>
