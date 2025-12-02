@@ -21,7 +21,7 @@ namespace Group6_WSAD_FinalProject.Controllers
         public IActionResult BrianHobbies()
         {
             var hobbies = _context.Hobbies
-                .Where(h => h.OwnerId == 2) // your OwnerId
+                .Where(h => h.OwnerId == 3) // your OwnerId
                 .ToList();
 
             return View(hobbies);
