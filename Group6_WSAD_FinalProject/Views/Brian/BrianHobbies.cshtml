@@ -1,0 +1,55 @@
+@model List<Group6_WSAD_FinalProject.Models.Hobby>
+
+@{
+    ViewData["Title"] = "Brian's Favorite Hobbies";
+}
+
+<div class="container mt-5">
+    <div class="p-4 rounded shadow-sm panel-border">
+
+        <h1 class="title-banner">Brian's Favorite Hobbies</h1>
+
+        @if (!Model.Any())
+        {
+            <p>No hobbies found for Brian.</p>
+        }
+        else
+        {
+            foreach (var hobby in Model)
+            {
+                <div class="hobby-item mb-5">
+
+                    <!-- Hobby Text -->
+                    <div class="hobby-text">
+                        <h2 class="mb-2">@hobby.Name</h2>
+
+                        @if (!string.IsNullOrEmpty(hobby.Category))
+                        {
+                            <p><strong>Category:</strong> @hobby.Category</p>
+                        }
+
+                        @if (!string.IsNullOrEmpty(hobby.Reason))
+                        {
+                            <p><strong>Why Brian Likes It and Background:</strong> @hobby.Reason</p>
+                        }
+                    </div>
+
+                    <!--Images-->
+                    <div class="row text-center">
+                        <div class="col-4 mb-3">
+                            <img src="~/images/brian-lawn.jpg" alt="Brian's Lawn" style="height: 450px; object-fit: cover;" />
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img src="~/images/brian-pc.jpg" alt="Brian's PC Build" style="height: 450px; object-fit: cover;" />
+                        </div>
+                        <div class="col-4 mb-3">
+                            <img src="~/images/brian-server.jpg" alt="Brian's Server Setup" style="height: 450px; object-fit: cover;" />
+                        </div>
+                    </div>
+
+                </div>
+            }
+        }
+
+    </div>
+</div>
