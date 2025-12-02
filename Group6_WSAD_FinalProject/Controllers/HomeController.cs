@@ -17,8 +17,18 @@ namespace Group6_WSAD_FinalProject.Controllers
         {
             return View();
         }
+        public IActionResult AboutHome()
+        {
+            return View();
+        }
 
-        public IActionResult Privacy()
+        public IActionResult Explore()
+        {
+            return View("~/Views/Hobbies/Explore.cshtml");
+        }
+
+
+        public IActionResult Dataset()
         {
             return View();
         }

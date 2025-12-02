@@ -1,27 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Group6_WSAD_FinalProject.Models;
 using Microsoft.EntityFrameworkCore;
+using Group6_WSAD_FinalProject.Models;
 
 namespace Group6_WSAD_FinalProject.Controllers
 {
-    public class BlakeController : Controller
+    public class BellaController: Controller
     {
         private readonly AppDbContext _context;
 
-        public BlakeController(AppDbContext context)
+        public BellaController(AppDbContext context)
         {
             _context = context;
         }
 
-        public IActionResult AboutBlake()
+        public IActionResult AboutBella()
         {
-            return View();
+            return View("~/Views/Bella/AboutBella.cshtml");
         }
-        public IActionResult BlakeHobbies()
+        public IActionResult BellaHobbies()
         {
             var hobbies = _context.Hobbies
-            .Where(h => h.OwnerId == 2)
+            .Where(h => h.OwnerId == 1) 
             .ToList();
+
+
             return View(hobbies);
         }
     }

@@ -1,0 +1,34 @@
+﻿@model List<Group6_WSAD_FinalProject.Models.Hobby>
+@{
+    ViewData["Title"] = "Hobbies Dataset";
+}
+<div class="p-4 rounded shadow-sm panel-border">
+<h1 class="title-banner">Our Hobbies Dataset</h1>
+
+<table class ="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Owner</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Reason</th>
+            <th>Difficulty</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var hobby in Model)
+        {
+            <tr>
+                <td>@hobby.Id</td>
+                <td>@hobby.Owner?.FirstName</td>
+                <td>@hobby.Name</td>
+                <td>@hobby.Category</td>
+                <td>@hobby.Reason</td>
+                <td>@hobby.DifficultyLevel</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+</div>

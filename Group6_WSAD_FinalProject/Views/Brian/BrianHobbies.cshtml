@@ -1,24 +1,23 @@
-﻿@model List<Group6_WSAD_FinalProject.Models.Hobby>
+@model List<Group6_WSAD_FinalProject.Models.Hobby>
 
 @{
-    ViewData["Title"] = "Blake's Favorite Hobbies";
+    ViewData["Title"] = "Brian's Favorite Hobbies";
 }
+
 <div class="container mt-5">
     <div class="p-4 rounded shadow-sm panel-border">
 
-        <h1 class="title-banner">Blake's Favorite Hobbies</h1>
+        <h1 class="title-banner">Brian's Favorite Hobbies</h1>
 
         @if (!Model.Any())
         {
-            <p>No hobbies found for Blake.</p>
+            <p>No hobbies found for Brian.</p>
         }
         else
         {
             foreach (var hobby in Model)
             {
                 <div class="hobby-item mb-5">
-
-
 
                     <!-- Hobby Text -->
                     <div class="hobby-text">
@@ -31,21 +30,20 @@
 
                         @if (!string.IsNullOrEmpty(hobby.Reason))
                         {
-                            <p><strong>Why Blake Likes It and Background:</strong> @hobby.Reason</p>
+                            <p><strong>Why Brian Likes It and Background:</strong> @hobby.Reason</p>
                         }
                     </div>
-
 
                     <!--Images-->
                     <div class="row text-center">
                         <div class="col-4 mb-3">
-                            <img src="~/images/ASE-Cover.jpg" alt="Ark: Survival Evolved" style="height: 450px; object-fit: cover;" />
+                            <img src="~/images/brian-lawn.jpg" alt="Brian's Lawn" style="height: 450px; object-fit: cover;" />
                         </div>
                         <div class="col-4 mb-3">
-                            <img src="~/images/RocketLeague-Cover.jpg" alt="RocketLeague" style="height: 450px; object-fit: cover;" />
+                            <img src="~/images/brian-pc.jpg" alt="Brian's PC Build" style="height: 450px; object-fit: cover;" />
                         </div>
                         <div class="col-4 mb-3">
-                            <img src="~/images/EliteDangerous-Cover.jpg" alt="EliteDangerous" style="height: 450px; object-fit: cover;" />
+                            <img src="~/images/brian-server.jpg" alt="Brian's Server Setup" style="height: 450px; object-fit: cover;" />
                         </div>
                     </div>
 
