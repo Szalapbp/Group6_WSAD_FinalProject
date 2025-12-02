@@ -43,12 +43,29 @@ namespace Group6_WSAD_FinalProject.Models
                    "the original Gran Turismo and Crash Bandicoot. One of the physically oldest games I have extensively played is Toejam and Earl " +
                    "on the Sega Genesis. Since then, I have owned Playstation 2, 3, and 4, the Xbox 360, One, and Series X, the Nintendo DS, 3DS, WII, " +
                    "and Switch Lite, the Oculus Quest 1 and 2, and more recently I built a Gaming PC. Across all those systems I've likely owned or " +
-                   "played hundreds of games and logged many tens of thousands of hours playing them. ", DifficultyLevel = 1, OwnerId = 2 }
+                   "played hundreds of games and logged many tens of thousands of hours playing them. ", DifficultyLevel = 1, OwnerId = 2 },
                     
 
 
-                   //add new hobbies here for the DB
 
+                // Brian's Hobby Data (Lawncare)
+                new Hobby {
+                 Id = 3,
+                 Name = "Lawncare",
+                 Category = "Outdoor Maintenance",
+                 Reason =
+                "Lawncare is my main hobby because I enjoy taking a simple yard and turning it into something clean, sharp, and well-maintained. " +
+                "I spend a lot of time learning how different types of grass grow, how soil health affects turf quality, and how proper mowing, watering, " +
+                "and fertilizing can completely change the look of a yard over time. I like experimenting with different techniques, such as changing mowing " +
+                "heights throughout the season, adjusting watering cycles, and using soil tests to help decide what nutrients the lawn needs. " +
+                "I also enjoy the physical part of the work, like edging, trimming, and keeping all the equipment in good shape. It’s rewarding to see how even " +
+                "small improvements add up when you stay consistent. " +
+                "Lawncare lets me combine hands-on work with learning new things, and I take a lot of pride in making my lawn look better every month. " +
+                "It’s a hobby that gives me a break from screens and technology, but still fits perfectly with my interest in tracking progress, planning, and " +
+                "understanding how different variables affect results.",
+                   DifficultyLevel = 1,
+                     OwnerId = 3
+                        }
                    );
         }
     
