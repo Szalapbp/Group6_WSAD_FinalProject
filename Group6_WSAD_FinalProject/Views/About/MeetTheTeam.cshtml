@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Explore Our Hobbies";
+}
+
+<div class="container mt-5">
+    <div class="p-4 rounded shadow-sm panel-border">
+
+        <h1 class="title-banner text-center mb-4">Meet The Team</h1>
+        <p class="text-center text-muted mb-4">
+            Meet our team and see some information on what we have accomplished in school and otherwise along with some of our future goals!
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 pb-4">
+
+            <!-- Blake -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">About Blake</h4>
+                        <p class="card-text">Meet Blake and see his Co-op experiences and his career goals!</p>
+                        <a asp-controller="Blake" asp-action="AboutBlake" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brian -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">About Brian</h4>
+                        <p class="card-text">Meet Brian and see his work experiences, hobbies, and some of his goals!</p>
+                        <a asp-controller="Brian" asp-action="AboutBrian" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bella -->
+            <div class="col">
+                <div class="card shadow-lg border-0 h-100" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">About Bella</h4>
+                        <p class="card-text">Meet Bella and see some of her Co-op experience as well as her upcomming opportunities!.</p>
+                        <a asp-controller="Bella" asp-action="AboutBella" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
