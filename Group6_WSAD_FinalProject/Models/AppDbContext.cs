@@ -18,7 +18,8 @@ namespace Group6_WSAD_FinalProject.Models
 
             modelBuilder.Entity<Owner>().HasData(
                   new Owner { Id = 1, FirstName = "Bella" },
-                  new Owner { Id = 2, FirstName = "Blake"}
+                  new Owner { Id = 2, FirstName = "Blake"},
+                  new Owner { Id= 3, FirstName = "Brian"}
                   //add owner here
 
                 );

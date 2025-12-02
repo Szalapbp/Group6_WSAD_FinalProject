@@ -109,6 +109,11 @@ namespace Group6_WSAD_FinalProject.Migrations
                         {
                             Id = 2,
                             FirstName = "Blake"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "Brian"
                         });
                 });
 

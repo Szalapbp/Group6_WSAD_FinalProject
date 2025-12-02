@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Group6_WSAD_FinalProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251202020117_AddBrianLawncareSeed")]
-    partial class AddBrianLawncareSeed
+    [Migration("20251202172709_AddAllSeedFix")]
+    partial class AddAllSeedFix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -112,6 +112,11 @@ namespace Group6_WSAD_FinalProject.Migrations
                         {
                             Id = 2,
                             FirstName = "Blake"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "Brian"
                         });
                 });
 
